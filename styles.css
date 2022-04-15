@@ -1,0 +1,367 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comic+Neue&display=swap');
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+/* Most Used Colors */
+:root {
+    --primary:#4EFFAA;
+    --background:#1F2937;
+    --secondary:#C4C4C416;
+  }
+  button{
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    width: fit-content;
+
+  }
+  body{
+      margin: 0;
+      padding: 0;
+      color: white;
+      background-color: var(--background);
+      background-image: radial-gradient(#ffffff96 1px,transparent 1px);
+      background-size: 120px 120px;
+  }
+  /* navbar */
+  nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem 0;
+  }
+  .brand-name{
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: white;
+      font-family: Arvo,serif;
+  }
+  .links{
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      padding: 0 2rem;  
+  }
+
+  nav a{
+    font-size: 1.5rem;
+    font-family: Comic Neue;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 2rem;
+  }
+  nav a:hover{
+      color: #ffffff96;
+  }
+
+  .action{
+      outline: none;
+      border: none;
+      font-size: 1.25rem;
+      background-color: var(--primary);
+      
+      border: var(--primary) solid 3px;   
+  }
+  .action a{
+    color: #1F2937;
+  }
+  .action :hover{
+      cursor: pointer;
+  }
+
+  /* Intro section */
+  #landing{   
+      width: 100vw;
+  }
+  .row{
+    justify-content: center;
+    display: flex;
+  }
+  .intro{
+      flex: 0.4;
+      padding: 2rem;
+      display: flex;
+      margin: 0 3rem;
+      flex-direction: column;
+  }
+  button :hover{
+      cursor: pointer;
+  }
+  .intro-text{
+      font-family: Arvo;
+      font-weight: bold;
+      font-size: 2.25rem;
+      letter-spacing: 1px;
+      line-height: 4.5rem;
+  }
+  .occupation{
+      color: var(--primary);
+  }
+  .project-btn{
+      outline: none;
+      background-color: var(--background);
+      border: var(--primary) solid 3px;
+      font-size: 1.25rem;
+      color: white;
+      margin: 1rem 0;
+  }
+  
+  .hero{
+      flex: 0.6;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+  }
+.undraw{
+    height: 35vh;
+}
+.triangle{
+    width: 40vw;
+    height: 70vh;
+    position: absolute;
+    z-index: -100;
+    left: -100px;
+    top: 25%;
+}
+.vector{
+    position: absolute;
+    z-index: -100;
+    height: 77%;
+    right: 5%;
+    bottom: 0%;
+}
+
+@keyframes animated{
+    0%{
+        transform: translate(0,-10);
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+        transform: translate(0,10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,-10);
+    }
+}
+
+.fa-chevron-down{
+    transition: 1s;
+    position: relative;   
+    color: var(--primary);
+    animation-name: animated;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+#About{
+    margin: 2rem 0;
+    width: 100vw;
+}
+
+.title{
+    font-family: Arvo;
+    display: flex;
+    height: 5rem;
+    margin: 0 0 2rem;
+    justify-content: center;
+    font-size: 2rem;
+    position: relative;
+}
+
+.title ::after{
+    position: absolute !important;
+    width: 4rem;
+    height: 5px;
+    background-color: var(--primary);
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    margin: 0 auto;
+}
+.para{
+    text-align: left;
+    margin: 3rem auto 0;
+    line-height: 1.5rem;
+    padding: 1.25rem;
+    width: 70vw;
+    font-size: 1.215rem;
+    font-family: Comic Neue;
+    background-color: var(--secondary);
+    border-radius: 1rem;
+}
+.card{
+    display: flex;
+    margin: 0 3rem;
+    padding: 1.5rem ;
+    width: 20rem;
+    line-height: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Comic Neue;
+    text-align: left;
+    background-color: var(--secondary);
+    border-radius: 1rem;
+    border: var(--primary) solid 2px;
+}
+
+.fa-solid{
+    color: var(--primary);
+}
+.hobbies.row{
+    justify-content: space-around;
+}
+
+#Project{
+    padding: 2rem;
+    text-align: center;
+}
+.technologies{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.technologies div{
+    margin: 1rem;
+    background-color: var(--secondary);
+    border-radius: 0.5rem;
+    width: 5rem;
+    padding: 1rem 2rem;
+    display: flex;
+    font-family: Comic Neue;
+    flex-direction: column;
+}
+.technologies div i{
+    color: var(--primary);
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project{
+    margin: 0 auto;
+    width: 60vw;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: var(--secondary);
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+i{
+    color: var(--primary);
+}
+.project .img{
+    height: 40vh;
+}
+.project-content{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-family: Comic Neue;
+}
+.project-content .heading{
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    font-family: Comic Neue;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+.project-content div *{
+    margin-right:1rem
+}
+.project-content .tag{
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color: var(--secondary);
+    border: var(--primary) solid 1px;
+    border-radius: 1rem;
+}
+
+.project-content .tags{
+    display: flex;
+}
+
+.project p{
+    font-size: 1.125rem;
+    line-height: 1.5rem; 
+}
+
+.project a{
+    margin: 0 ;
+}
+button:hover{
+    cursor: pointer;
+}
+
+form{
+    font-family: Comic Neue;
+    font-size: 1.125rem;
+    background-color: var(--secondary);
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 1.25rem;
+    width: fit-content;
+    display:flex;
+    flex-direction: column;
+}
+form *{
+    margin: 0.5rem 1rem;
+}
+form input{
+    outline: none;
+    padding: 0.5rem 1rem;
+    border: var(--primary) 1px solid;
+    width: 10rem;
+    color: #ffffff96;
+    border-radius: 0.5rem;
+    background-color: var(--secondary);
+}
+form textarea{
+    outline: none;
+    padding: 0.5rem 1rem;
+    border: var(--primary) 1px solid;
+    width: 20rem;
+    color: #ffffff96;
+    border-radius: 0.5rem;
+    background-color: var(--secondary);   
+}
+form .action{
+    font-size: 1.125rem;
+    padding: 0.5rem 1rem;
+}
+
+.footer{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+.footer .flex-hor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.footer .copywrite{
+    letter-spacing: 4px;
+    font-family: Arvo;
+}
+.footer .colored{
+    color: var(--primary);
+}
