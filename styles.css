@@ -12,16 +12,20 @@
     --background:#1F2937;
     --secondary:#C4C4C416;
   }
+  html{
+      scroll-behavior:smooth;
+  }
   button{
     padding: 0.75rem 1.5rem;
     border-radius: 0.75rem;
     width: fit-content;
-
+    cursor: pointer;
   }
   body{
       margin: 0;
       padding: 0;
       color: white;
+      font-family: Comic Neue;
       background-color: var(--background);
       background-image: radial-gradient(#ffffff96 1px,transparent 1px);
       background-size: 120px 120px;
@@ -48,7 +52,6 @@
 
   nav a{
     font-size: 1.5rem;
-    font-family: Comic Neue;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
     margin: 2rem;
@@ -79,6 +82,7 @@
   .row{
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
   }
   .intro{
       flex: 0.4;
@@ -86,9 +90,6 @@
       display: flex;
       margin: 0 3rem;
       flex-direction: column;
-  }
-  button :hover{
-      cursor: pointer;
   }
   .intro-text{
       font-family: Arvo;
@@ -191,20 +192,18 @@
     padding: 1.25rem;
     width: 70vw;
     font-size: 1.215rem;
-    font-family: Comic Neue;
     background-color: var(--secondary);
     border-radius: 1rem;
 }
 .card{
     display: flex;
-    margin: 0 3rem;
+    margin: 1rem 3rem;
     padding: 1.5rem ;
     width: 20rem;
     line-height: 1.25rem;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    font-family: Comic Neue;
+    justify-content: center;
     text-align: left;
     background-color: var(--secondary);
     border-radius: 1rem;
@@ -216,6 +215,7 @@
 }
 .hobbies.row{
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #Project{
@@ -226,6 +226,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .technologies div{
     margin: 1rem;
@@ -234,7 +235,6 @@
     width: 5rem;
     padding: 1rem 2rem;
     display: flex;
-    font-family: Comic Neue;
     flex-direction: column;
 }
 .technologies div i{
@@ -270,13 +270,11 @@ i{
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    font-family: Comic Neue;
 }
 .project-content .heading{
     display: flex;
     align-items: center;
     width: 20rem;
-    font-family: Comic Neue;
     font-size: 1.25rem;
     line-height: 1.5rem;
 }
@@ -303,12 +301,9 @@ i{
 .project a{
     margin: 0 ;
 }
-button:hover{
-    cursor: pointer;
-}
+
 
 form{
-    font-family: Comic Neue;
     font-size: 1.125rem;
     background-color: var(--secondary);
     padding: 1rem;
@@ -364,4 +359,24 @@ form .action{
 }
 .footer .colored{
     color: var(--primary);
+}
+
+@media only screen and (max-width:900px){
+    .hero{
+        display: none;
+    }
+    .img{
+        display: none;
+    }
+    .intro{
+        flex: 1;
+        align-items: center;
+        text-align: center;
+    }
+    .intro-text{
+        flex: 1;
+    }
+    nav a{
+        display: none;
+    }
 }
