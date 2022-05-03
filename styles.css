@@ -338,6 +338,7 @@ form{
     border-radius: 1.25rem;
     width: fit-content;
     display:flex;
+    color: white;
     flex-direction: column;
 }
 form *{
