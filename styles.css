@@ -97,7 +97,7 @@
   .intro-text{
       font-family: Arvo;
       font-weight: bold;
-      font-size: 2.25rem;
+      font-size: 3rem;
       letter-spacing: 1px;
       line-height: 4.5rem;
   }
@@ -259,6 +259,7 @@
 .feature p{
     color: #9CA3AF;
     font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 
 #Project{
@@ -377,15 +378,18 @@ form{
     font-size: 1.125rem;
     background-color: var(--secondary);
     padding: 1rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
     border-radius: 1.25rem;
-    width: fit-content;
+    width: 30rem;
     display:flex;
+    align-items: center;
+    justify-content: space-between;
     color: white;
-    flex-direction: column;
+    max-width: 80vw;
+    flex-wrap: wrap;
 }
 form *{
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 0.5rem;
 }
 form input{
     outline: none;
@@ -396,11 +400,14 @@ form input{
     border-radius: 0.5rem;
     background-color: var(--secondary);
 }
+.textarea{
+    width: 100%;
+}
 form textarea{
+    width: 100%;
+    margin: 0.5rem 0;
     outline: none;
-    padding: 0.5rem 1rem;
     border: var(--primary) 1px solid;
-    width: 10rem;
     color: #ffffff96;
     border-radius: 0.5rem;
     background-color: var(--secondary);   
