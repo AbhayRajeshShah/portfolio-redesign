@@ -63,6 +63,10 @@ nav a:hover {
   color: #ffffff96;
 }
 
+.a {
+  width: 12rem;
+}
+
 .action {
   outline: none;
   border: none;
