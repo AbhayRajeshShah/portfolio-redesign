@@ -377,6 +377,11 @@ i {
 
 .project-content .tags {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.tags * {
+  margin-bottom: 0.5rem;
 }
 
 .project p {
@@ -467,7 +472,8 @@ form .action {
     margin: 0;
   }
   .projects .active {
-    padding: 2rem;
+    min-width: 17rem;
+    padding: 0.5rem;
   }
   .project-content {
     width: 80%;
