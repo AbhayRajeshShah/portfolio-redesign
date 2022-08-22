@@ -84,7 +84,9 @@ nav a:hover {
   cursor: pointer;
   border: 3px solid white;
 }
-
+.f-action {
+  margin-left: 0.5rem;
+}
 /* Intro section */
 #landing {
   width: 100vw;
